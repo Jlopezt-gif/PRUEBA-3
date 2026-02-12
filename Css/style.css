@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/gregonia');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -67,12 +69,11 @@ body {
     top: 80px;
     text-align: center;
     font-size: 1.6rem;
-    font-family: 'Georgia', 'Palatino', 'Times New Roman', serif !important;
+    font-family: 'Gregonia', 'Century Gothic', 'Futura', sans-serif !important;
     color: #fff;
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 400;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    line-height: 1.7;
+    line-height: 2.2;
     padding: 0 40px;
     max-width: 380px;
     min-height: 120px;
@@ -372,8 +373,8 @@ body {
     
     .mensaje-carta {
         font-size: 1.3rem;
-        font-family: 'Georgia', 'Palatino', 'Times New Roman', serif !important;
-        font-style: italic;
+        font-family: 'Gregonia', 'Century Gothic', 'Futura', sans-serif !important;
+        line-height: 2.2;
         top: 60px;
         padding: 0 20px;
     }
