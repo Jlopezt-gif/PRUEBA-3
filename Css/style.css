@@ -66,15 +66,17 @@ body {
     position: absolute;
     top: 80px;
     text-align: center;
-    font-size: 1rem;                                          /* Más grande */
-    font-family: 'Brush Script MT', 'Pacifico', cursive;       /* Cursiva */
+    font-size: 1.6rem;
+    font-family: 'Georgia', 'Palatino', 'Times New Roman', serif !important;
     color: #fff;
-    font-weight: 600;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    line-height: 1.6;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    line-height: 1.7;
     padding: 0 40px;
-    max-width: 350px;
+    max-width: 380px;
     min-height: 120px;
+    letter-spacing: 0.5px;
 }
 
 .corazon-clickeable {
@@ -369,7 +371,9 @@ body {
     }
     
     .mensaje-carta {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-family: 'Georgia', 'Palatino', 'Times New Roman', serif !important;
+        font-style: italic;
         top: 60px;
         padding: 0 20px;
     }
