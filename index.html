@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Dania 💕</title>
+    <meta name="author" content="Juan">
+    <meta name="description" content="Una sorpresa especial para el amor de mi vida">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <!-- ================== PANTALLA 1: CARTA ================== -->
+    <div id="pantalla-carta" class="screen">
+        <div class="carta-container">
+            <img src="Img/carta.png" alt="Carta de amor" class="carta-image">
+            
+            <div class="mensaje-carta" id="mensaje-carta"></div>
+            
+            <div class="corazon-clickeable" id="corazon">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,90 C50,90 10,60 10,35 C10,20 20,10 30,10 C40,10 45,15 50,25 C55,15 60,10 70,10 C80,10 90,20 90,35 C90,60 50,90 50,90 Z" 
+                          fill="#ff1744" 
+                          stroke="#c1001f" 
+                          stroke-width="2"/>
+                </svg>
+            </div>
+            
+            <div class="carta-footer">
+                <div class="de-para de">De: Juan</div>
+                <div class="de-para para">Para: Dania</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================== PANTALLA 2: DEDICATORIA ================== -->
+    <div id="pantalla-dedicatoria" class="screen" style="display:none;">
+        <div id="floating-objects"></div>
+        
+        <div class="contenido-principal">
+            <div class="lado-izquierdo">
+                <div class="dedication-text" id="dedication-text"></div>
+                <div class="signature" id="signature"></div>
+            </div>
+            
+            <div class="lado-derecho">
+                <div class="foto-frame">
+                    <img src="Img/4_jpg.jpeg" alt="Nuestra foto" class="foto-pareja">
+                    <div class="foto-overlay">
+                        <span class="foto-fecha">14.02.2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contador-dias" id="contador-dias"></div>
+    </div>
+
+    <audio src="Music/musica.mp3" id="bg-music" preload="auto"></audio>
+    <script src="Js/script.js"></script>
+</body>
+</html>
