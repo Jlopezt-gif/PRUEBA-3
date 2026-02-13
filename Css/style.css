@@ -76,7 +76,7 @@ body {
 
 .mensaje-carta {
     position: absolute;
-    top: 100px;
+    top: 80px;  /* ANTES era 100px, ahora 80px para subirlo */
     text-align: center;
     font-size: 12px !important;
     font-family: 'Montserrat', 'Arial', sans-serif !important;
@@ -89,7 +89,6 @@ body {
     min-height: 120px;
     letter-spacing: 0.3px;
 }
-
 .corazon-clickeable {
     position: absolute;
     top: 260px;
