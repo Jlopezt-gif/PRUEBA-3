@@ -12,7 +12,13 @@ const textoMensaje = "Tengo algo para ti\n\nPresiona sobre el corazón\npara des
 let i = 0;
 function escribirMensaje() {
     if (i < textoMensaje.length) {
-        mensajeCarta.textContent += textoMensaje[i];
+        const char = textoMensaje[i];
+        // Convertir saltos de línea a <br>
+        if (char === '\n') {
+            mensajeCarta.innerHTML += '<br>';
+        } else {
+            mensajeCarta.innerHTML += char;
+        }
         i++;
         // Pausa más larga en saltos de línea
         const delay = textoMensaje[i - 1] === '\n' ? 400 : 60;
@@ -22,7 +28,6 @@ function escribirMensaje() {
         corazon.style.pointerEvents = 'auto';
     }
 }
-
 // Iniciar escritura después de un momento
 setTimeout(escribirMensaje, 800);
 
