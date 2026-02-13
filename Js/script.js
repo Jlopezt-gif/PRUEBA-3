@@ -30,6 +30,7 @@ function escribirMensaje() {
         corazon.style.pointerEvents = 'auto';
     }
 }
+
 // Iniciar escritura después de un momento
 setTimeout(escribirMensaje, 800);
 
@@ -42,7 +43,7 @@ corazon.addEventListener('click', function() {
     
     setTimeout(() => {
         pantallaCarta.style.display = 'none';
-        pantallaDedicatoria.style.display = 'flex';
+        pantallaDedicatoria.style.display = 'block';
         
         // Iniciar animaciones de la pantalla 2
         setTimeout(() => {
@@ -71,13 +72,13 @@ Gracias por ser mi compañera, mi confidente, mi todo. Gracias por amarme tal co
 
 Te amo hoy, mañana y siempre.`;
     
-    // Efecto typing para la dedicatoria
+    // Efecto typing para la dedicatoria - VISIBLE COMPLETO
     let index = 0;
     function escribirDedicatoria() {
         if (index < texto.length) {
             dedicationText.textContent += texto[index];
             index++;
-            setTimeout(escribirDedicatoria, 40);
+            setTimeout(escribirDedicatoria, 30);
         } else {
             // Mostrar firma cuando termine
             setTimeout(() => {
@@ -96,7 +97,6 @@ function mostrarContador() {
     
     function actualizarContador() {
         const ahora = new Date();
-        const diferencia = ahora - fechaInicio;
         
         // Calcular años, meses y días
         let años = ahora.getFullYear() - fechaInicio.getFullYear();
@@ -116,11 +116,15 @@ function mostrarContador() {
             meses += 12;
         }
         
-        contador.innerHTML = `Llevamos juntos: <strong>${años}</strong> ${años === 1 ? 'año' : 'años'}, <strong>${meses}</strong> ${meses === 1 ? 'mes' : 'meses'} y <strong>${días}</strong> ${días === 1 ? 'día' : 'días'}`;
+        contador.innerHTML = `💕 Llevamos juntos: <strong>${años}</strong> ${años === 1 ? 'año' : 'años'}, <strong>${meses}</strong> ${meses === 1 ? 'mes' : 'meses'} y <strong>${días}</strong> ${días === 1 ? 'día' : 'días'} 💕`;
         contador.classList.add('visible');
     }
     
-    actualizarContador();
+    // Mostrar contador después de que termine la dedicatoria
+    setTimeout(() => {
+        actualizarContador();
+    }, 8000);
+    
     // Actualizar cada día
     setInterval(actualizarContador, 86400000);
 }
