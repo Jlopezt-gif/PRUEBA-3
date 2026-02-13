@@ -77,7 +77,7 @@ body {
     position: absolute;
     top: 80px;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     font-family: 'Montserrat', 'Arial', sans-serif !important;
     color: #fff;
     font-weight: 500;
@@ -128,7 +128,7 @@ body {
 
 .de-para {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     color: #ffffff;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
     font-weight: 600;
