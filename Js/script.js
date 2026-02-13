@@ -13,12 +13,14 @@ let i = 0;
 function escribirMensaje() {
     if (i < textoMensaje.length) {
         const char = textoMensaje[i];
-        // Convertir saltos de línea a <br>
+        
+        // Convertir saltos de línea (\n) a <br> para HTML
         if (char === '\n') {
             mensajeCarta.innerHTML += '<br>';
         } else {
             mensajeCarta.innerHTML += char;
         }
+        
         i++;
         // Pausa más larga en saltos de línea
         const delay = textoMensaje[i - 1] === '\n' ? 400 : 60;
