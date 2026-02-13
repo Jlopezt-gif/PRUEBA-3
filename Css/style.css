@@ -76,7 +76,7 @@ body {
 
 .mensaje-carta {
     position: absolute;
-    top: 60px;  /* ANTES era 100px, ahora 80px para subirlo */
+    top: 70px;  /* ANTES era 100px, ahora 80px para subirlo */
     text-align: center;
     font-size: 12px !important;
     font-family: 'Montserrat', 'Arial', sans-serif !important;
