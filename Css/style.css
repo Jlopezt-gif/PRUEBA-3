@@ -92,8 +92,8 @@ body {
 .corazon-clickeable {
     position: absolute;
     top: 260px;
-    width: 90px !important;
-    height: 90px !important;
+    width: 70px !important;
+    height: 70px !important;
     cursor: pointer;
     transition: transform 0.3s ease;
     animation: latido 1.5s ease-in-out infinite;
