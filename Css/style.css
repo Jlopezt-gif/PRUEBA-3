@@ -25,15 +25,24 @@ body {
 /* ===================== PANTALLA 1: CARTA ===================== */
 
 #pantalla-carta {
-    background: linear-gradient(135deg, #ffc4d0 0%, #ffb3c1 50%, #ffa4b6 100%);
-    background-size: 400% 400%;
-    animation: gradient-shift 8s ease infinite;
+    background-color: #b51218;
+    background-image: url("../Img/fotocorazon.png");
+    background-repeat: repeat;
+    background-size: 80px;
 }
 
-@keyframes gradient-shift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Capa para que el fondo no distraiga tanto */
+#pantalla-carta::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(181, 18, 24, 0.85);
+    z-index: 0;
+}
+
+#pantalla-carta > * {
+    position: relative;
+    z-index: 1;
 }
 
 .carta-container {
