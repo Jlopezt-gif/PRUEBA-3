@@ -92,8 +92,8 @@ body {
 .corazon-clickeable {
     position: absolute;
     top: 260px;
-    width: 70px !important;
-    height: 70px !important;
+    width: 40px !important;
+    height: 40px !important;
     cursor: pointer;
     transition: transform 0.3s ease;
     animation: latido 1.5s ease-in-out infinite;
@@ -398,8 +398,8 @@ body {
     
     .corazon-clickeable {
         top: 200px;
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
     }
     
     .carta-footer {
