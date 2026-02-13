@@ -6,7 +6,7 @@ const mensajeCarta = document.getElementById('mensaje-carta');
 const corazon = document.getElementById('corazon');
 
 // Mensaje que aparecerá letra por letra
-const textoMensaje = "Tengo algo para ti.\n\nPresiona sobre el corazón\npara descubrirlo";
+const textoMensaje = "Tengo algo para ti\n\nPresiona sobre el corazón\npara descubrirlo";
 
 // Efecto de escritura
 let i = 0;
