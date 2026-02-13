@@ -269,7 +269,7 @@ body {
     width: 100%;
     max-width: 400px;
     aspect-ratio: 3/4;
-    background: white;
+    background: #FAF0E6;  /* CAMBIADO de white a #FAF0E6 */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 
