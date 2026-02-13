@@ -317,19 +317,20 @@ body {
     width: 100%;
     max-width: 900px;
     margin: 40px auto 60px auto;
-    background: #FAF0E6;  /* CAMBIADO */
+    background: #FAF0E6;
     padding: 30px 50px;
     border-radius: 30px;
     font-family: 'Georgia', serif;
     font-size: 1.4rem;
-    color: #8B0000;  /* CAMBIADO a rojo más oscuro para mejor contraste */
+    color: #8B0000;
     font-weight: bold;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-    z-index: 5;
-    opacity: 0;
+    z-index: 10;  /* CAMBIADO de 5 a 10 */
+    opacity: 1;   /* CAMBIADO: forzar opacidad completa */
     transition: opacity 0.8s ease;
     text-align: center;
-    border: 3px solid rgba(181, 18, 24, 0.3);  /* CAMBIADO borde más visible */
+    border: 3px solid rgba(181, 18, 24, 0.3);
+    position: relative;  /* NUEVO: asegurar que el z-index funcione */
 }
 
 .contador-dias.visible {
